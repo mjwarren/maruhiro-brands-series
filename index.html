@@ -7,6 +7,23 @@
 <link rel="icon" 
       type="image/png" 
       href="https://dl.dropboxusercontent.com/u/646137/maruhiro%20logo%2080x80.png">
+<!-- ToTop -->
+<script>
+$(function(){
+  var pageTop = $("#page-top1");
+  pageTop.click(function () {
+    $('body, html').animate({ scrollTop: 0 }, 500);
+    return false;
+  });
+  $(window).scroll(function () {
+    if($(this).scrollTop() >= 200) {
+      pageTop.css( "transform", "rotateY(0deg)" );
+    } else {
+      pageTop.css( "transform", "rotateY(270deg)" );
+    }
+  });
+});
+</script>
 </head>
 </html>
 <style>
@@ -58,24 +75,6 @@ background: rgba(0,0,0,.8);
 </div>
 <div data-type="AwesomeTableView" data-viewID="-K2G6HpPsgiERnQE-OEi"></div>
 <script src="https://awesome-table.com/AwesomeTableInclude.js"></script>
-
-<!-- ToTop -->
-<script>
-$(function(){
-  var pageTop = $("#page-top1");
-  pageTop.click(function () {
-    $('body, html').animate({ scrollTop: 0 }, 500);
-    return false;
-  });
-  $(window).scroll(function () {
-    if($(this).scrollTop() >= 200) {
-      pageTop.css( "transform", "rotateY(0deg)" );
-    } else {
-      pageTop.css( "transform", "rotateY(270deg)" );
-    }
-  });
-});
-</script>
 
 <footer>
   <div align="center"><p></p><a href="http://www.hasamiyaki.jp"><img src="http://www.hasamiyaki.jp/wordpress/wp-content/themes/hasamiyaki/src/images/logo-maruhiro.svg" height="80" width="80" align="middle"></a></div>
