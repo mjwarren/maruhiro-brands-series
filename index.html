@@ -7,23 +7,6 @@
 <link rel="icon" 
       type="image/png" 
       href="https://dl.dropboxusercontent.com/u/646137/maruhiro%20logo%2080x80.png">
-<!-- ToTop -->
-<script>
-$(function(){
-  var pageTop = $("#page-top1");
-  pageTop.click(function () {
-    $('body, html').animate({ scrollTop: 0 }, 500);
-    return false;
-  });
-  $(window).scroll(function () {
-    if($(this).scrollTop() >= 200) {
-      pageTop.css( "transform", "rotateY(0deg)" );
-    } else {
-      pageTop.css( "transform", "rotateY(270deg)" );
-    }
-  });
-});
-</script>
 </head>
 </html>
 <style>
@@ -39,29 +22,6 @@ body
  margin-left:60px;
  margin-botom:20px;
  margin-right:60px;
-}
-<!-- ToTop Button! -->
-<a href="#" id="page-top1">
-<i class="livicon" data-n="angle-double-up" data-s="22" data-op="1" data-l="1" data-hc="0" data-c="#ffffff" data-hovercolor="#57ad68" data-duration="700"></i>
-</a>
-
-#page-top1{
-display: block;
-position: fixed;
-z-index: 9999;
-bottom: 10px;
-right: 10px;
-width: 64px;
-padding: 16px 0px;
-background: rgba(0,0,0,.7);
-color: #fff;
-text-align: center;
-text-decoration: none;
-transform: rotateY(270deg);
-transition: .5s;
-}
-#page-top1:hover{
-background: rgba(0,0,0,.8);
 }
 </style>
 <body>
